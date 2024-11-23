@@ -8,6 +8,7 @@
 %\RequirePackage{xeCJK}
 \RequirePackage{ctex}
 
+
 % For overall page settings
 \RequirePackage{geometry}
 \RequirePackage{fancyhdr}
@@ -25,6 +26,7 @@
 \RequirePackage{xcolor}
 \usepackage{booktabs}%三线表
 \usepackage{multirow}%合并单元格
+\usepackage{longtable}%长表格
 \usepackage{stfloats}
 \usepackage{datetime}
 \usepackage{natbib}
