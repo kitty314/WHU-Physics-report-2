@@ -8,6 +8,7 @@
 %\RequirePackage{xeCJK}
 \RequirePackage{ctex}
 
+
 % For overall page settings
 \RequirePackage{geometry}
 \RequirePackage{fancyhdr}
@@ -42,9 +43,9 @@ citecolor=black,urlcolor=black]{hyperref}
 \linespread{1.2}
 \geometry{top=1in,bottom=1in,left=1in,right=1in}
 \setcounter{secnumdepth}{2}
-\renewcommand\thesection{\chinese{section}、}
-\renewcommand\thesubsection{\arabic{subsection}.}
-\renewcommand\thesubsubsection{(\arabic{subsubsection})}
+%\renewcommand\thesection{\chinese{section}、}
+%\renewcommand\thesubsection{\arabic{subsection}.}
+%\renewcommand\thesubsubsection{(\arabic{subsubsection})}
 \newlist{clause}{enumerate}{1}
 \setlist[clause]{fullwidth,itemindent=2em,label=(\arabic*)}
 \newCJKfontfamily[song]\song{SimSun}[AutoFakeBold]
@@ -62,21 +63,22 @@ citecolor=black,urlcolor=black]{hyperref}
 \setcounter{secnumdepth}{3}
 % 节标题格式, 居中, 使用\chinese命令修改计数器
 \def\@seccntformat#1{\csname the#1\endcsname\ }
-\renewcommand\thesection{\chinese{section}、}
-\renewcommand\thesubsection{\arabic{section}\thinspace.\thinspace\arabic{subsection}}
-\renewcommand\thesubsubsection{\thesubsection\thinspace.\thinspace\arabic{subsubsection}}
+%\renewcommand\thesection{\chinese{section}、}
+\renewcommand\thesection{\arabic{section}\,}
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}\,}
+\renewcommand\thesubsubsection{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}\,}
 \renewcommand\section{\@startsection{section}{1}{\z@}%
  	{-3.5ex \@plus -1ex \@minus -.2ex}%
-	{2.3ex \@plus.2ex}%
-	{\normalfont\large\bfseries}}
+	{2.3ex \@plus .2ex}%
+	{\normalfont\zihao{-4}\sf}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
 	{-3.25ex\@plus -1ex \@minus -.2ex}%
 	{1.5ex \@plus .2ex}%
-	{\normalfont\large\bfseries}}
+	{\normalfont\zihao{5}\sf}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
 	{-3.25ex\@plus -1ex \@minus -.2ex}%
 	{1.5ex \@plus .2ex}%
-	{\normalfont\normalsize\bfseries}}
+	{\normalfont\zihao{5}\sf}}
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
 	{3.25ex \@plus1ex \@minus.2ex}%
 	{-1em}%
@@ -120,10 +122,9 @@ citecolor=black,urlcolor=black]{hyperref}
 \newCJKfontfamily\sectioncf{kaishu}
 \setCJKfamilyfont{simkai}{SIMKAI.TTF}
 \renewcommand{\kaishu}{\CJKfamily{simkai}}%楷书字体指令
-\titleformat{\section}{\raggedright\normalsize\bfseries}{}{-1em}{}
-\titleformat*{\subsection}{\raggedright\small\bfseries}
-\titleformat*{\subsubsection}{\raggedright\small\sectioncf}
-\renewcommand\thesection{\arabic{section}}
+%\titleformat{\section}{\raggedright\huge\bfseries}{}{-1em}{}
+%\titleformat*{\subsection}{\raggedright\small\bfseries}
+%\titleformat*{\subsubsection}{\raggedright\small\sectioncf}
 \newcommand{ \upcite}[1]{\textsuperscript{\textsuperscript{\citep{#1} } }} % 设置上标显示参考文献编号的命令
 \setlength{\parindent}{2em}
 \lstset{language=Matlab}
