@@ -68,16 +68,16 @@ citecolor=black,urlcolor=black]{hyperref}
 \renewcommand\thesubsection{\arabic{section}.\arabic{subsection}\,}
 \renewcommand\thesubsubsection{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}\,}
 \renewcommand\section{\@startsection{section}{1}{\z@}%
- 	{0.7em \@plus 0pt \@minus 0pt}%
-	{0.7em \@plus 0pt \@minus 0pt}%
+ 	{0.7em \@plus 0.7em \@minus 0.7em}%
+	{0.7em \@plus 0.7em \@minus 0.7em}%
 	{\normalfont\zihao{-4}\sf}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
- 	{0.1em \@plus 0pt \@minus 0pt}%
-	{0.1em \@plus 0pt \@minus 0pt}%
+ 	{0.1em \@plus 0.1em \@minus 0.1em}%
+	{0.1em \@plus 0.1em \@minus 0.1em}%
 	{\normalfont\zihao{5}\sf}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
- 	{0.1em \@plus 0pt \@minus 0pt}%
-	{0.1em \@plus 0pt \@minus 0pt}%
+ 	{0.1em \@plus 0.1em \@minus 0.1em}%
+	{0.1em \@plus 0.1em \@minus 0.1em}%
 	{\normalfont\zihao{5}\sf}}
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
 	{3.25ex \@plus1ex \@minus.2ex}%
